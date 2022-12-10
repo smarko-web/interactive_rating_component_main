@@ -89,14 +89,14 @@ button:hover {
     color: red;
     display: none;
 }
-/* .thankyou-card {
-    display: grid;
+.thankyou-card {
+    /* display: grid;
     grid-template-rows: auto;
     gap: 5%;
-    justify-content: center;
+    justify-content: center; */
     text-align: center;
 }
-.thankyou-card > * {
+/* .thankyou-card > * {
     border: 1px solid white;
 } */
 .thankyou-card h2 {
