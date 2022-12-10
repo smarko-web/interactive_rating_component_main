@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --DarkGrey: hsl(220, 2%, 27%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--VeryDarkBlue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+article {
+    border-radius: 5%;
+    background-color: var(--DarkBlue);
+    display: grid;
+    /* grid-template-rows: auto; */
+    /* gap: 5%; */
+    align-content: center;
+    color: var(--LightGrey);
+    padding: 1em;
+    width: 80%;
+    max-width: 500px;
+}
+
+h1, h2 {
+    color: var(--White);
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+ul button {
+    border-radius: 50%;
+    color: var(--LightGrey);
+    background-color: var(--DarkGrey);
+    border: none;
+    padding: .75em;
+}
+ul button:hover {
+    color: var(--White);
+    background-color: var(--Orange); 
+    cursor: pointer;
+}
+ul button:focus {
+    color: var(--White);
+    background-color: var(--LightGrey); 
+    cursor: default; 
+}
+
+button {
+    background-color: var(--Orange);
+    color: var(--White);
+    text-transform: uppercase;
+    /* padding: 1.2em 0; */
+    border-radius: 60px;
+}
+button:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+    cursor: pointer;
+}
+.star-icon {
+    background-color: var(--DarkGrey);
+    border-radius: 50%;
+    padding: .5em; 
+    margin-bottom: 1em;
+}
+.error {
+    text-align: center;
+    color: red;
+    display: none;
+}
+/* .thankyou-card {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 5%;
+    justify-content: center;
+    text-align: center;
+}
+.thankyou-card > * {
+    border: 1px solid white;
+} */
+.thankyou-card h2 {
+    font-weight: 400;
+    color: var(--Orange);
+    background-color: var(--DarkGrey);
+    border-radius: 60px;
+    font-size: .9em;
+    text-align: center;
+    width: 50%;
+    min-width: 145px;
+    margin: auto;
+}
+.attribution { 
+    font-size: 11px; 
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+.attribution a { 
+    color: var(--Orange); 
+}
+@media screen and (min-width: 374px){
+    ul button {
+        padding: 1.25em;
+    }
+}
+
+/* @media screen and (min-width: 750px){
+    article {
+        width: 25%;
+    }
+} */
