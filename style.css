@@ -91,9 +91,9 @@ button:hover {
 }
 .thankyou-card {
     /* display: grid;
-    grid-template-rows: auto;
-    gap: 5%;
-    justify-content: center; */
+    grid-template-rows: auto; 
+    gap: 5%; */
+    justify-content: center;
     text-align: center;
 }
 /* .thankyou-card > * {
