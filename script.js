@@ -1,16 +1,17 @@
 var mainCard = document.querySelector('.main-card');
 var tuCard = document.querySelector('.thankyou-card');
-var numButtons = document.querySelectorAll('.num-btn');
+var numButtons = document.querySelectorAll('label');
 var ratNum = document.querySelector('#ratNum');
 var errorMessage = document.querySelector('.error');
 var submitButton = document.querySelector('.btn-submit');
 var numArray = Array.from(numButtons);
 
-tuCard.style.display = 'none';
+// tuCard.style.display = 'none';
 
 
 numArray.forEach(item => {
     item.addEventListener('click', () => {
+        console.log(document.querySelector('input'));
         ratNum.innerHTML = item.innerHTML;
     });
 })

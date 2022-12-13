@@ -16,7 +16,7 @@
 }
 body {
     background-color: var(--VeryDarkBlue);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,19 +26,17 @@ body {
 article {
     border-radius: 5%;
     background-color: var(--DarkBlue);
-    display: grid;
-    /* grid-template-rows: auto; */
-    /* gap: 5%; */
-    align-content: center;
     color: var(--LightGrey);
     padding: 1em;
     width: 80%;
     max-width: 500px;
 }
-
+article * {
+    margin-bottom: 5%;
+}
 h1, h2 {
     color: var(--White);
-    margin: 0;
+    /* margin: 0; */
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
 }
@@ -65,13 +63,58 @@ ul button:focus {
     background-color: var(--LightGrey); 
     cursor: default; 
 }
-
+form {
+    border: 2px solid red;
+    margin-bottom: 0;
+}
+form > * {
+    text-align: center;
+    margin: auto;
+    /* margin-bottom: 3%; */
+}
+form div:first-child {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+}
+input[type="radio"] {
+    /* opacity: 0;
+    width: 0;
+    margin: 0; */
+    
+}
+label {
+    display: inline-block;
+    /* margin-right: 3%; */
+    border-radius: 50%;
+    color: var(--LightGrey);
+    background-color: var(--DarkGrey);
+    border: none;
+    padding: 1em;
+    border: 1px solid blue;
+}
+/* label:last-of-type {
+    margin-right: 0;
+} */
+label:hover {
+    color: var(--White);
+    background-color: var(--Orange); 
+    cursor: pointer;
+}
+label:focus {
+    color: var(--White);
+    background-color: var(--LightGrey); 
+    cursor: default; 
+}
 button {
+    display: block;
     background-color: var(--Orange);
     color: var(--White);
     text-transform: uppercase;
     padding: 1em 0;
     border-radius: 60px;
+    width: 100%;
+    margin-bottom: 0;
 }
 button:hover {
     color: var(--Orange);
@@ -82,12 +125,12 @@ button:hover {
     background-color: var(--DarkGrey);
     border-radius: 50%;
     padding: .5em; 
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 .error {
     text-align: center;
     color: red;
-    display: none;
+    /* display: none; */
 }
 .thankyou-card {
     /* display: grid;

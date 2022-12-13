@@ -95,7 +95,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [youTube overview video](https://www.youtube.com/watch?v=cQnUopEeZgw) - The video helped me get inspired for this project, it also gave me an overview of the project
 - [Converting a NodeList to an Array #](https://gomakethings.com/converting-a-nodelist-to-an-array-with-vanilla-javascript/) - This is an amazing article which helped me finally understand Converting a NodeList to an Array #. I'd recommend it to anyone still learning this concept.
-
+- [Restyling labels as buttons](https://youtu.be/hOU4Aqci2zs) - This video showed how to restyle the labels in the form
 
 ## Author
 
