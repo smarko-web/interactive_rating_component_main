@@ -8,6 +8,7 @@
     --DarkBlue: hsl(213, 19%, 18%);
     --VeryDarkBlue: hsl(216, 12%, 8%);
     --DarkGrey: hsl(220, 2%, 27%);
+    --gapValue: 1.5em;
 }
 * {
     margin: 0;
@@ -30,93 +31,69 @@ article {
     padding: 1em;
     width: 80%;
     max-width: 500px;
+    display: flex; 
+    gap: var(--gapValue); 
+    flex-direction: column;
+    overflow-y: visible;
+    z-index: 20;
 }
-article * {
-    margin-bottom: 5%;
-}
+
 h1, h2 {
     color: var(--White);
-    /* margin: 0; */
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
 }
-ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding: 0;
-}
-ul button {
-    border-radius: 50%;
-    color: var(--LightGrey);
-    background-color: var(--DarkGrey);
-    border: none;
-    padding: .75em;
-}
-ul button:hover {
-    color: var(--White);
-    background-color: var(--Orange); 
-    cursor: pointer;
-}
-ul button:focus {
-    color: var(--White);
-    background-color: var(--LightGrey); 
-    cursor: default; 
-}
+
 form {
-    border: 2px solid red;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapValue); 
 }
-form > * {
-    text-align: center;
-    margin: auto;
-    /* margin-bottom: 3%; */
-}
+
 form div:first-child {
     display: flex;
     justify-content: space-between;
-    border: 2px solid white;
+    flex-wrap: wrap;
+    row-gap: 2em;
 }
 input[type="radio"] {
-    /* opacity: 0;
+    opacity: 0;
     width: 0;
-    margin: 0; */
+    display: none;
+    margin: 0;
     
 }
 label {
     display: inline-block;
-    /* margin-right: 3%; */
     border-radius: 50%;
     color: var(--LightGrey);
     background-color: var(--DarkGrey);
     border: none;
     padding: 1em;
-    border: 1px solid blue;
 }
-/* label:last-of-type {
-    margin-right: 0;
-} */
+
 label:hover {
     color: var(--White);
     background-color: var(--Orange); 
     cursor: pointer;
 }
-label:focus {
+input:checked + label {
     color: var(--White);
     background-color: var(--LightGrey); 
     cursor: default; 
 }
-button {
+
+.btn-submit {
     display: block;
     background-color: var(--Orange);
     color: var(--White);
     text-transform: uppercase;
     padding: 1em 0;
-    border-radius: 60px;
+    border-radius: 30px;
     width: 100%;
     margin-bottom: 0;
 }
-button:hover {
+.btn-submit:hover {
     color: var(--Orange);
     background-color: var(--White);
     cursor: pointer;
@@ -125,32 +102,28 @@ button:hover {
     background-color: var(--DarkGrey);
     border-radius: 50%;
     padding: .5em; 
-    /* margin-bottom: 1em; */
 }
 .error {
     text-align: center;
     color: red;
-    /* display: none; */
 }
-.thankyou-card {
-    /* display: grid;
-    grid-template-rows: auto; 
-    gap: 5%; */
-    justify-content: center;
+.thankyou-card {    
     text-align: center;
 }
-/* .thankyou-card > * {
-    border: 1px solid white;
-} */
+
+.thankyou-card img {
+    width: 75%;
+    margin: auto;
+}
 .thankyou-card h2 {
     font-weight: 400;
     color: var(--Orange);
     background-color: var(--DarkGrey);
-    border-radius: 60px;
+    border-radius: 30px;
     font-size: .9em;
     text-align: center;
-    width: 50%;
-    min-width: 145px;
+    width: 60%;
+    min-width: 130px;
     margin: auto;
 }
 .attribution { 
@@ -163,14 +136,5 @@ button:hover {
 .attribution a { 
     color: var(--Orange); 
 }
-@media screen and (min-width: 374px){
-    ul button {
-        padding: 1.25em;
-    }
-}
 
-/* @media screen and (min-width: 750px){
-    article {
-        width: 25%;
-    }
-} */
+

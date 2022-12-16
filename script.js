@@ -1,11 +1,12 @@
 var mainCard = document.querySelector('.main-card');
 var tuCard = document.querySelector('.thankyou-card');
+var radio = document.querySelector('input[type=radio]');
 var numButtons = document.querySelectorAll('label');
 var ratNum = document.querySelector('#ratNum');
 var errorMessage = document.querySelector('.error');
 var submitButton = document.querySelector('.btn-submit');
 var numArray = Array.from(numButtons);
-
+var radioArray = Array.from(radio);
 // tuCard.style.display = 'none';
 
 
@@ -14,6 +15,12 @@ numArray.forEach(item => {
         console.log(document.querySelector('input'));
         ratNum.innerHTML = item.innerHTML;
     });
+})
+radioArray.forEach(item => {
+
+    if (ratNub.innerHTML = item.value) {
+        item.style.backgroundColor = 'red';
+    }
 })
 submitButton.addEventListener('click', function(){
     if (!ratNum.innerHTML) {
