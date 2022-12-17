@@ -57,7 +57,8 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own 
+knowledge.
 
 To see how you can add code snippets, see below:
 
@@ -104,6 +105,10 @@ rateRadio.forEach((item) => {
         }
     });
 ```
+
+First; as I noticed in previous projects that I had worked on, some people with smaller screen sizes, specifically that have the iPhone 5SE, were having trouble viewing my projects. That is why I was working with the 214 pixel screen size from the start
+
+As can be seen in my repo, the first version that was made was not using HTML form(I was made aware of this issue by a helpful mentor on [Slack](https://frontend-mentor.slack.com/)). That is why I had to redo the project in it’s entirety, with the radio buttons I reinforced my previous knowledge of giving them labels(which were styled as buttons that I reused from the first version) associated with their corresponding (radio) inputs
 
 ### Continued development
 
