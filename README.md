@@ -120,6 +120,7 @@ As can be seen in my repo, the first version that was made was not using HTML fo
 - [Restyling labels as buttons](https://youtu.be/hOU4Aqci2zs) - This video showed how to restyle the labels in the form. 
 - [Check whitch radio input is checked](https://youtu.be/cSuEAD-Tnd4) - This video helped me find the select rating input. 
 - [Focus efect on labels](https://www.youtube.com/watch?v=MZq5zFSpUlo) - This video showed how to make the focus efect on the labels buttons.
+- [aria labels](https://youtu.be/ffxwEyBcdf0?t=1773) - This Video Showed Me How to Make The Label Accessible 
 ## Author
 
 - Frontend Mentor - [@smarko-web](https://www.frontendmentor.io/profile/smarko-web)
