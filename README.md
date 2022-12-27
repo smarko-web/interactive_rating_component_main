@@ -121,6 +121,7 @@ As can be seen in my repo, the first version that was made was not using HTML fo
 - [Check whitch radio input is checked](https://youtu.be/cSuEAD-Tnd4) - This video helped me find the select rating input. 
 - [Focus efect on labels](https://www.youtube.com/watch?v=MZq5zFSpUlo) - This video showed how to make the focus efect on the labels buttons.
 - [aria labels](https://youtu.be/ffxwEyBcdf0?t=1773) - This Video Showed Me How to Make The Label Accessible 
+- [making custom radio buttons accessible](https://www.youtube.com/watch?v=tZCV3t-aEdw) - this video explained how to make radio button invisble yet accessilbe to assistive technology
 ## Author
 
 - Frontend Mentor - [@smarko-web](https://www.frontendmentor.io/profile/smarko-web)

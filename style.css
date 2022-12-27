@@ -59,11 +59,8 @@ form div:first-child {
     row-gap: 2em;
 }
 input[type="radio"] {
-    opacity: 0;
-    width: 0;
-    display: none;
-    margin: 0;
-    
+    position: absolute;
+    left: -999px;
 }
 label {
     display: inline-block;
